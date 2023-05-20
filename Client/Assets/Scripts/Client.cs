@@ -39,8 +39,9 @@ public class Client : MonoBehaviour
         udp = new UDP();
     }
 
-    public void ConnectToServer()
+    public void ConnectToServer(string _ip)
     {
+        ip = _ip;
         InitializeClientData();
         tcp.Connect();
     }
