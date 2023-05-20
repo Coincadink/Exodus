@@ -1,6 +1,4 @@
-﻿// Branch testing :)
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -126,8 +124,9 @@ namespace GameServer
             packetHandlers = new Dictionary<int, PacketHandler>()
             {
                 { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived },
-                { (int)ClientPackets.udpTestReceived, ServerHandle.UDPTestReceived }
+                { (int)ClientPackets.playerMovement, ServerHandle.PlayerMovement}
             };
+
             Console.WriteLine("Initialized packets.");
         }
     }
