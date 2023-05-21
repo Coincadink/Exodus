@@ -8,6 +8,8 @@ namespace GameServer
 {
     internal class ServerSend
     {
+        #region Send Functions
+
         private static void SendTCPData(int _toClient, Packet _packet)
         {
             _packet.WriteLength();
@@ -61,6 +63,8 @@ namespace GameServer
                 }
             }
         }
+
+        #endregion
 
         #region Packets
 
